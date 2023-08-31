@@ -8,7 +8,6 @@ import { useEffect } from "react";
 const App = () => {
   const updatedNumber = useSelector((state) => state.upDownReducer);
   const dispatch = useDispatch();
-
   useEffect(() => {
     console.log("MOUNTING DONE!");
     AOS.init({
